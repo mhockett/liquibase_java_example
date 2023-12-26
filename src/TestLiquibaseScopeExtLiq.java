@@ -1,5 +1,5 @@
 /*
-  Demo of running liquibase with Scope.CommandScope
+  Demo of running liquibase by extending the liquibase class and creating custom update using liquibase scope and scopeCommand 
  */
 
 public class TestLiquibaseScopeExtLiq {
