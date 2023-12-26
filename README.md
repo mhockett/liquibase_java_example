@@ -2,11 +2,13 @@ Readme for changeset 4.25.1 demo
 
 Tested on JDK 8
 
-The demo includes two demo scripts :
+The demo includes three demo scripts :
 
-1. TestLiquibaseScope.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand
+1. TestLiquibaseScope.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand. This version does not work.
 
-1. TestLiquibaseUpdate.java which will run liquibase for changelog using liquibase.update 
+1. TestLiquibaseScope.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand, but extends Liquibase.liquibase class and executes scope within that class. This version works.
+
+1. TestLiquibaseUpdate.java which will run liquibase for changelog using liquibase.update. This version continues to work although the update method in the liquibase class is deprecated. 
 
 1. Shell scripts to run using Oracle and another for PG. 
 
@@ -53,11 +55,11 @@ I added the shells but I usually run using my IDE Run.
    1. updatelog.log has the output from the version that uses update
    1. CommandScopeLogs.log has the output from the scope  
 
-5. The two java programs are rerunnable.  Each deletes the databasechangelog row and the scott.bonus row. 
-6. The two programs print results at the end.  Each queries the the databasechangelog for the row that should be created.
+5. The java programs are rerunnable.  Each deletes the databasechangelog row and the scott.bonus row. 
+6. The programs print results at the end.  Each queries the the databasechangelog for the row that should be created.
 It also queries for the row that should be inserted into scott.bonus.  It prints out a success or failure. 
 
-From the version that runs the update you will see :
+From the version that runs the update and command line utility, and extended liquibase class you will see the following :
 
 ```
 
