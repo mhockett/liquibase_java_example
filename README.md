@@ -2,13 +2,9 @@ Readme for changeset 4.25.1 demo
 
 Tested on JDK 8
 
-The demo includes three demo scripts :
+The demo includes the demo java program LiquibaseScopeExample.java :
 
-1. TestLiquibaseScope.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand. This version does not work.
-
-1. TestLiquibaseScope.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand, but extends Liquibase.liquibase class and executes scope within that class. This version works.
-
-1. TestLiquibaseUpdate.java which will run liquibase for changelog using liquibase.update. This version continues to work although the update method in the liquibase class is deprecated. 
+1. LiquibaseScopeExample.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand  
 
 1. Shell scripts to run using Oracle and another for PG. 
 
@@ -55,37 +51,8 @@ I added the shells but I usually run using my IDE Run.
    1. updatelog.log has the output from the version that uses update
    1. CommandScopeLogs.log has the output from the scope  
 
-5. The java programs are rerunnable.  Each deletes the databasechangelog row and the scott.bonus row. 
-6. The programs print results at the end.  Each queries the the databasechangelog for the row that should be created.
+5. The java demo program is rerunnable.  The script deletes the databasechangelog row and the scott.bonus rows. 
+6. The demo print results at the end.  Each queries the the databasechangelog for the row that should be created.
 It also queries for the row that should be inserted into scott.bonus.  It prints out a success or failure. 
 
-From the version that runs the update and command line utility, and extended liquibase class you will see the following :
-
-```
-
-08:03:21.627 [main] INFO liquibase.command.CommandScope - Command execution complete
-08:03:21.628 [main] DEBUG TestLiquibaseUpdate - Complete the test
-08:03:21.632 [main] DEBUG TestLiquibaseUpdate - Found the changeset in the databasechangelog changeset.sql
-08:03:21.633 [main] DEBUG TestLiquibaseUpdate - Found the job in bonus CIO
-Found results? true Job=CIO ChangesetId=changeset.sql
-SUCCESS   
-   
-```
-   
-From the version that runs the scope, you will see :
-
-```text
-
-08:13:37.769 [main] INFO liquibase.command.CommandScope - Command execution complete
-08:13:37.769 [main] DEBUG TestLiquibaseScope - Results Entry set defaultChangeExecListener value liquibase.changelog.visitor.DefaultChangeExecListener@1c93f6e1
-08:13:37.769 [main] DEBUG TestLiquibaseScope - Results Entry set statusCode value 0
-08:13:37.772 [main] DEBUG TestLiquibaseScope - Results Entry set updateReport value UpdateReportParameters(changelogArgValue=changelog.xml, jdbcUrl=jdbc:oracle:thin:@localhost:1521/BAN83, tag=null, commandTitle=Update Sql, success=true, databaseInfo=DatabaseInfo(databaseType=Oracle, version=Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production), runtimeInfo=RuntimeInfo(systemUsername=mhockett, hostname=C02D1A9SMD6M, os=Mac OS X, interfaceType=null, startTime=null, updateDuration=null, liquibaseVersion=4.25.1, javaVersion=1.8.0_282), operationInfo=OperationInfo(command=null, operationOutcome=success, operationOutcomeErrorMsg=null, exception=null, updateSummaryMsg=null, rowsAffected=0), customData=CustomData(customDataFile=null, fileContents=null), changesetInfo=ChangesetInfo(changesetCount=1, changesetInfoList=[IndividualChangesetInfo(index=1, changesetAuthor=scott, changesetId=changeset.sql, changelogFile=changeset.sql, comment=null, success=true, changesetOutcome=EXECUTED, errorMsg=null, labels=, contexts=null, attributes=[], generatedSql=[insert into scott.bonus ( ename, job, sal, comm)
-  values (  'ME', 'CIO', 100000, 10000 );])]), date=Thu Dec 21 08:13:33 EST 2023)
-08:13:37.772 [main] DEBUG TestLiquibaseScope - Complete the test
-Found results? false Job=null ChangesetId=null
-FAILURE
-
-
-```
- 
  
