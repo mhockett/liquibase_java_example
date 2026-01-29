@@ -12,546 +12,540 @@ Database Driver: org.postgresql.Driver
 Default Schema: ellmaster
 ================================================
 Starting test for CommandScope method with Parameters upgradedemo testChangeset
-2026-01-29 11:30:21.229 DEBUG l.s.StandardServiceLocator - Loaded liquibase.servicelocator.ServiceLocator instance liquibase.servicelocator.StandardServiceLocator
+2026-01-29 12:00:23.809 DEBUG l.s.StandardServiceLocator - Loaded liquibase.servicelocator.ServiceLocator instance liquibase.servicelocator.StandardServiceLocator
 ================================================
 Liquibase Version: 4.29.2
 ================================================
-Start time is 2026-01-29 11:30:21:230
+Start time is 2026-01-29 12:00:23:811
 Start test liquibase Scope 3 test changeset with parameters
-2026-01-29 11:30:21.396 DEBUG DatabaseUtility - Database connection is set up.
-2026-01-29 11:30:21.416 DEBUG DatabaseUtility - Test connection good 2026-01-29 11:30:21.398077-05
-2026-01-29 11:30:21.417 DEBUG DatabaseUtility - Step 1 set up connection is complete
-2026-01-29 11:30:21.424 DEBUG DatabaseUtility - Removed the bonus record we create
-2026-01-29 11:30:21.434 DEBUG DatabaseUtility - Remove the databasechangelog record we created
-2026-01-29 11:30:21.436 DEBUG DatabaseUtility - Commit the deletes
+2026-01-29 12:00:23.984 DEBUG DatabaseUtility - Database connection is set up.
+2026-01-29 12:00:24.005 DEBUG DatabaseUtility - Test connection good 2026-01-29 12:00:23.985398-05
+2026-01-29 12:00:24.005 DEBUG DatabaseUtility - Step 1 set up connection is complete
+2026-01-29 12:00:24.018 DEBUG DatabaseUtility - Removed the bonus record we create
+2026-01-29 12:00:24.029 DEBUG DatabaseUtility - Remove the databasechangelog record we created
+2026-01-29 12:00:24.032 DEBUG DatabaseUtility - Commit the deletes
 Found results? false Job=null ChangesetId=null
 Found results? false Job=null ChangesetId=null
-2026-01-29 11:30:21.441 DEBUG LiquibaseScopeExample - Records were removed for example
-2026-01-29 11:30:21.446 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.CockroachDatabase
-2026-01-29 11:30:21.446 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.DB2Database
-2026-01-29 11:30:21.446 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.Db2zDatabase
-2026-01-29 11:30:21.447 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.DerbyDatabase
-2026-01-29 11:30:21.447 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.EnterpriseDBDatabase
-2026-01-29 11:30:21.447 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.FirebirdDatabase
-2026-01-29 11:30:21.447 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.H2Database
-2026-01-29 11:30:21.448 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.HsqlDatabase
-2026-01-29 11:30:21.448 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.InformixDatabase
-2026-01-29 11:30:21.448 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.Ingres9Database
-2026-01-29 11:30:21.449 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MSSQLDatabase
-2026-01-29 11:30:21.449 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MariaDBDatabase
-2026-01-29 11:30:21.450 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MockDatabase
-2026-01-29 11:30:21.450 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MySQLDatabase
-2026-01-29 11:30:21.451 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.OracleDatabase
-2026-01-29 11:30:21.451 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.PostgresDatabase
-2026-01-29 11:30:21.451 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SQLiteDatabase
-2026-01-29 11:30:21.451 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SybaseASADatabase
-2026-01-29 11:30:21.452 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SybaseDatabase
-2026-01-29 11:30:21.452 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.UnsupportedDatabase
-2026-01-29 11:30:21.452 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SnowflakeDatabase
-2026-01-29 11:30:21.453 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.jvm.ConnectionPatterns instance liquibase.database.jvm.JdbcConnectionPatterns
-2026-01-29 11:30:21.457 DEBUG l.database.core.PostgresDatabase - Connected to ellmaster@jdbc:postgresql://localhost:5432/ban2020
-2026-01-29 11:30:21.457 DEBUG l.database.core.PostgresDatabase - Setting auto commit to false from true
-2026-01-29 11:30:21.488 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.preserveSchemaCase found
-2026-01-29 11:30:21.488 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.preserveSchemaCase is using the default value of false
+2026-01-29 12:00:24.038 DEBUG LiquibaseScopeExample - Records were removed for example
+2026-01-29 12:00:24.042 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.CockroachDatabase
+2026-01-29 12:00:24.042 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.DB2Database
+2026-01-29 12:00:24.042 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.Db2zDatabase
+2026-01-29 12:00:24.043 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.DerbyDatabase
+2026-01-29 12:00:24.043 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.EnterpriseDBDatabase
+2026-01-29 12:00:24.043 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.FirebirdDatabase
+2026-01-29 12:00:24.044 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.H2Database
+2026-01-29 12:00:24.044 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.HsqlDatabase
+2026-01-29 12:00:24.044 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.InformixDatabase
+2026-01-29 12:00:24.044 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.Ingres9Database
+2026-01-29 12:00:24.045 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MSSQLDatabase
+2026-01-29 12:00:24.045 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MariaDBDatabase
+2026-01-29 12:00:24.046 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MockDatabase
+2026-01-29 12:00:24.046 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.MySQLDatabase
+2026-01-29 12:00:24.047 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.OracleDatabase
+2026-01-29 12:00:24.047 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.PostgresDatabase
+2026-01-29 12:00:24.047 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SQLiteDatabase
+2026-01-29 12:00:24.048 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SybaseASADatabase
+2026-01-29 12:00:24.048 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SybaseDatabase
+2026-01-29 12:00:24.048 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.UnsupportedDatabase
+2026-01-29 12:00:24.048 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.Database instance liquibase.database.core.SnowflakeDatabase
+2026-01-29 12:00:24.049 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.jvm.ConnectionPatterns instance liquibase.database.jvm.JdbcConnectionPatterns
+2026-01-29 12:00:24.053 DEBUG l.database.core.PostgresDatabase - Connected to ellmaster@jdbc:postgresql://localhost:5432/ban2020
+2026-01-29 12:00:24.053 DEBUG l.database.core.PostgresDatabase - Setting auto commit to false from true
+2026-01-29 12:00:24.085 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.preserveSchemaCase found
+2026-01-29 12:00:24.085 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.preserveSchemaCase is using the default value of false
 WARNING: Postgres does not support catalogs, so the values set in 'defaultCatalogName' and 'referenceDefaultCatalogName' will be ignored.
-2026-01-29 11:30:21.489 DEBUG l.database.core.PostgresDatabase - Connected to ellmaster@jdbc:postgresql://localhost:5432/ban2020
-2026-01-29 11:30:21.489 DEBUG l.database.core.PostgresDatabase - Not adjusting the auto commit mode; it is already false
-2026-01-29 11:30:21.494 DEBUG l.s.StandardServiceLocator - Loaded liquibase.executor.Executor instance liquibase.executor.jvm.JdbcExecutor
-2026-01-29 11:30:21.494 DEBUG l.s.StandardServiceLocator - Loaded liquibase.executor.Executor instance liquibase.executor.jvm.SnowflakeJdbcExecutor
-2026-01-29 11:30:21.498 DEBUG DatabaseUtility - Test Liq database connection good 2026-01-29 11:30:21.45776-05
-2026-01-29 11:30:21.498 DEBUG DatabaseUtility - Step 1a test Liq connection is complete
-2026-01-29 11:30:21.498 DEBUG LiquibaseScopeExample - Liquibase Database is set up.
-2026-01-29 11:30:21.499 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.databaseChangelogLockTableName aka liquibase.databaseChangeLogLockTableName found
-2026-01-29 11:30:21.499 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.databaseChangelogLockTableName is using the default value of DATABASECHANGELOGLOCK
-2026-01-29 11:30:21.500 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.databaseChangelogTableName aka liquibase.databaseChangeLogTableName found
-2026-01-29 11:30:21.500 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.databaseChangelogTableName is using the default value of DATABASECHANGELOG
-2026-01-29 11:30:21.501 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.supportPropertyEscaping aka enableEscaping found
-2026-01-29 11:30:21.501 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.supportPropertyEscaping is using the default value of false
-2026-01-29 11:30:21.501 DEBUG l.resource.DirectoryResourceAccessor - Creating resourceAccessor for directory /Users/mhockett/liquibase/liquibase_java_example/testChangeset
-2026-01-29 11:30:21.502 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.searchPath found
-2026-01-29 11:30:21.502 DEBUG l.r.SearchPathResourceAccessor - Overall search path: 
+2026-01-29 12:00:24.085 DEBUG l.database.core.PostgresDatabase - Connected to ellmaster@jdbc:postgresql://localhost:5432/ban2020
+2026-01-29 12:00:24.085 DEBUG l.database.core.PostgresDatabase - Not adjusting the auto commit mode; it is already false
+2026-01-29 12:00:24.091 DEBUG l.s.StandardServiceLocator - Loaded liquibase.executor.Executor instance liquibase.executor.jvm.JdbcExecutor
+2026-01-29 12:00:24.091 DEBUG l.s.StandardServiceLocator - Loaded liquibase.executor.Executor instance liquibase.executor.jvm.SnowflakeJdbcExecutor
+2026-01-29 12:00:24.098 DEBUG DatabaseUtility - Test Liq database connection good 2026-01-29 12:00:24.053042-05
+2026-01-29 12:00:24.098 DEBUG DatabaseUtility - Step 1a test Liq connection is complete
+2026-01-29 12:00:24.098 DEBUG LiquibaseScopeExample - Liquibase Database is set up.
+2026-01-29 12:00:24.100 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.databaseChangelogLockTableName aka liquibase.databaseChangeLogLockTableName found
+2026-01-29 12:00:24.100 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.databaseChangelogLockTableName is using the default value of DATABASECHANGELOGLOCK
+2026-01-29 12:00:24.100 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.databaseChangelogTableName aka liquibase.databaseChangeLogTableName found
+2026-01-29 12:00:24.100 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.databaseChangelogTableName is using the default value of DATABASECHANGELOG
+2026-01-29 12:00:24.101 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.supportPropertyEscaping aka enableEscaping found
+2026-01-29 12:00:24.101 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.supportPropertyEscaping is using the default value of false
+2026-01-29 12:00:24.102 DEBUG l.resource.DirectoryResourceAccessor - Creating resourceAccessor for directory /Users/mhockett/liquibase/liquibase_java_example/testChangeset
+2026-01-29 12:00:24.102 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.searchPath found
+2026-01-29 12:00:24.102 DEBUG l.r.SearchPathResourceAccessor - Overall search path: 
   - /Users/mhockett/liquibase/liquibase_java_example/testChangeset
-2026-01-29 11:30:21.502 DEBUG LiquibaseScopeExample - Set up class loader is complete
-2026-01-29 11:30:21.508 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.CalculateChecksumCommandStep
-2026-01-29 11:30:21.508 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncCommandStep
-2026-01-29 11:30:21.508 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncSqlCommandStep
-2026-01-29 11:30:21.509 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncToTagCommandStep
-2026-01-29 11:30:21.509 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncToTagSqlCommandStep
-2026-01-29 11:30:21.509 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ClearChecksumsCommandStep
-2026-01-29 11:30:21.509 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DbDocCommandStep
-2026-01-29 11:30:21.511 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddAutoIncrementChange
-2026-01-29 11:30:21.512 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddColumnChange
-2026-01-29 11:30:21.512 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddDefaultValueChange
-2026-01-29 11:30:21.512 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddForeignKeyConstraintChange
-2026-01-29 11:30:21.513 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddLookupTableChange
-2026-01-29 11:30:21.513 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddNotNullConstraintChange
-2026-01-29 11:30:21.513 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddPrimaryKeyChange
-2026-01-29 11:30:21.513 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddUniqueConstraintChange
-2026-01-29 11:30:21.513 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AlterSequenceChange
-2026-01-29 11:30:21.513 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateIndexChange
-2026-01-29 11:30:21.514 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateProcedureChange
-2026-01-29 11:30:21.514 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateSequenceChange
-2026-01-29 11:30:21.514 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateTableChange
-2026-01-29 11:30:21.514 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateViewChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DeleteDataChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropAllForeignKeyConstraintsChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropColumnChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropDefaultValueChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropForeignKeyConstraintChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropIndexChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropNotNullConstraintChange
-2026-01-29 11:30:21.515 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropPrimaryKeyChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropProcedureChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropSequenceChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropTableChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropUniqueConstraintChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropViewChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.EmptyChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.ExecuteShellCommandChange
-2026-01-29 11:30:21.516 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.InsertDataChange
-2026-01-29 11:30:21.518 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.LoadDataChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.LoadUpdateDataChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.MergeColumnChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.ModifyDataTypeChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.OutputChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RawSQLChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameColumnChange
-2026-01-29 11:30:21.519 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameSequenceChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameTableChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameViewChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.SQLFileChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.SetColumnRemarksChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.SetTableRemarksChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.StopChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.TagDatabaseChange
-2026-01-29 11:30:21.520 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.UpdateDataChange
-2026-01-29 11:30:21.521 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.custom.CustomChangeWrapper
-2026-01-29 11:30:21.565 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DiffChangelogCommandStep
-2026-01-29 11:30:21.566 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DiffCommandStep
-2026-01-29 11:30:21.566 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DropAllCommandStep
-2026-01-29 11:30:21.566 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ExecuteSqlCommandStep
-2026-01-29 11:30:21.567 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackCountSqlCommandStep
-2026-01-29 11:30:21.567 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackFromTagSqlCommandStep
-2026-01-29 11:30:21.567 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackSqlCommandStep
-2026-01-29 11:30:21.568 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.GenerateChangelogCommandStep
-2026-01-29 11:30:21.568 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.HistoryCommandStep
-2026-01-29 11:30:21.569 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.InternalSnapshotCommandStep
-2026-01-29 11:30:21.569 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ListLocksCommandStep
-2026-01-29 11:30:21.569 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.MarkNextChangesetRanCommandStep
-2026-01-29 11:30:21.569 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.MarkNextChangesetRanSqlCommandStep
-2026-01-29 11:30:21.569 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ReleaseLocksCommandStep
-2026-01-29 11:30:21.570 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCommandStep
-2026-01-29 11:30:21.570 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCountCommandStep
-2026-01-29 11:30:21.570 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCountSqlCommandStep
-2026-01-29 11:30:21.570 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackSqlCommandStep
-2026-01-29 11:30:21.570 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackToDateCommandStep
-2026-01-29 11:30:21.570 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackToDateSqlCommandStep
-2026-01-29 11:30:21.571 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.SnapshotCommandStep
-2026-01-29 11:30:21.571 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.SnapshotReferenceCommandStep
-2026-01-29 11:30:21.571 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.StartH2CommandStep
-2026-01-29 11:30:21.571 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.StatusCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.StopH2CommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.TagCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.TagExistsCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UnexpectedChangesetsCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCountCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCountSqlCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateSqlCommandStep
-2026-01-29 11:30:21.572 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateTestingRollbackCommandStep
-2026-01-29 11:30:21.573 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateToTagCommandStep
-2026-01-29 11:30:21.573 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateToTagSqlCommandStep
-2026-01-29 11:30:21.573 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ValidateCommandStep
-2026-01-29 11:30:21.573 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ChangeExecListenerCommandStep
-2026-01-29 11:30:21.573 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DatabaseChangelogCommandStep
-2026-01-29 11:30:21.573 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep
-2026-01-29 11:30:21.574 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DbUrlConnectionCommandStep
-2026-01-29 11:30:21.574 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DiffOutputControlCommandStep
-2026-01-29 11:30:21.574 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.LockServiceCommandStep
-2026-01-29 11:30:21.574 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.OutputWriterCommandStep
-2026-01-29 11:30:21.575 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.PreCompareCommandStep
-2026-01-29 11:30:21.575 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ReferenceDatabaseOutputWriterCommandStep
-2026-01-29 11:30:21.575 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ReferenceDbUrlConnectionCommandStep
-2026-01-29 11:30:21.575 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ShowSummaryArgument
-2026-01-29 11:30:21.578 DEBUG l.s.StandardServiceLocator - Loaded liquibase.logging.mdc.MdcManager instance liquibase.logging.mdc.NoOpMdcManager
-2026-01-29 11:30:21.578 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.strict found
-2026-01-29 11:30:21.578 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.strict is using the default value of false
-2026-01-29 11:30:21.579 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.changeExecListener found
-2026-01-29 11:30:21.579 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.changeExecListener found
-2026-01-29 11:30:21.580 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.changeExecListenerClass found
-2026-01-29 11:30:21.580 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.changeExecListenerClass found
-2026-01-29 11:30:21.580 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.changeExecListenerPropertiesFile found
-2026-01-29 11:30:21.580 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.changeExecListenerPropertiesFile found
-2026-01-29 11:30:21.580 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.changelogFile' configuration of 'changelog.xml'
+2026-01-29 12:00:24.102 DEBUG LiquibaseScopeExample - Set up class loader is complete
+2026-01-29 12:00:24.109 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.CalculateChecksumCommandStep
+2026-01-29 12:00:24.109 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncCommandStep
+2026-01-29 12:00:24.109 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncSqlCommandStep
+2026-01-29 12:00:24.110 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncToTagCommandStep
+2026-01-29 12:00:24.110 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncToTagSqlCommandStep
+2026-01-29 12:00:24.110 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ClearChecksumsCommandStep
+2026-01-29 12:00:24.110 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DbDocCommandStep
+2026-01-29 12:00:24.113 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddAutoIncrementChange
+2026-01-29 12:00:24.113 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddColumnChange
+2026-01-29 12:00:24.113 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddDefaultValueChange
+2026-01-29 12:00:24.113 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddForeignKeyConstraintChange
+2026-01-29 12:00:24.114 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddLookupTableChange
+2026-01-29 12:00:24.114 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddNotNullConstraintChange
+2026-01-29 12:00:24.114 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddPrimaryKeyChange
+2026-01-29 12:00:24.114 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AddUniqueConstraintChange
+2026-01-29 12:00:24.114 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.AlterSequenceChange
+2026-01-29 12:00:24.114 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateIndexChange
+2026-01-29 12:00:24.115 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateProcedureChange
+2026-01-29 12:00:24.115 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateSequenceChange
+2026-01-29 12:00:24.115 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateTableChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.CreateViewChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DeleteDataChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropAllForeignKeyConstraintsChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropColumnChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropDefaultValueChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropForeignKeyConstraintChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropIndexChange
+2026-01-29 12:00:24.116 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropNotNullConstraintChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropPrimaryKeyChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropProcedureChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropSequenceChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropTableChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropUniqueConstraintChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.DropViewChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.EmptyChange
+2026-01-29 12:00:24.117 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.ExecuteShellCommandChange
+2026-01-29 12:00:24.118 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.InsertDataChange
+2026-01-29 12:00:24.119 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.LoadDataChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.LoadUpdateDataChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.MergeColumnChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.ModifyDataTypeChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.OutputChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RawSQLChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameColumnChange
+2026-01-29 12:00:24.120 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameSequenceChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameTableChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.RenameViewChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.SQLFileChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.SetColumnRemarksChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.SetTableRemarksChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.StopChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.TagDatabaseChange
+2026-01-29 12:00:24.121 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.core.UpdateDataChange
+2026-01-29 12:00:24.122 DEBUG l.s.StandardServiceLocator - Loaded liquibase.change.Change instance liquibase.change.custom.CustomChangeWrapper
+2026-01-29 12:00:24.163 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DiffChangelogCommandStep
+2026-01-29 12:00:24.166 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DiffCommandStep
+2026-01-29 12:00:24.166 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.DropAllCommandStep
+2026-01-29 12:00:24.166 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ExecuteSqlCommandStep
+2026-01-29 12:00:24.167 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackCountSqlCommandStep
+2026-01-29 12:00:24.167 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackFromTagSqlCommandStep
+2026-01-29 12:00:24.167 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackSqlCommandStep
+2026-01-29 12:00:24.168 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.GenerateChangelogCommandStep
+2026-01-29 12:00:24.168 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.HistoryCommandStep
+2026-01-29 12:00:24.169 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.InternalSnapshotCommandStep
+2026-01-29 12:00:24.169 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ListLocksCommandStep
+2026-01-29 12:00:24.169 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.MarkNextChangesetRanCommandStep
+2026-01-29 12:00:24.169 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.MarkNextChangesetRanSqlCommandStep
+2026-01-29 12:00:24.169 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ReleaseLocksCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCountCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCountSqlCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackSqlCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackToDateCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackToDateSqlCommandStep
+2026-01-29 12:00:24.170 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.SnapshotCommandStep
+2026-01-29 12:00:24.171 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.SnapshotReferenceCommandStep
+2026-01-29 12:00:24.171 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.StartH2CommandStep
+2026-01-29 12:00:24.171 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.StatusCommandStep
+2026-01-29 12:00:24.171 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.StopH2CommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.TagCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.TagExistsCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UnexpectedChangesetsCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCountCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCountSqlCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateSqlCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateTestingRollbackCommandStep
+2026-01-29 12:00:24.172 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateToTagCommandStep
+2026-01-29 12:00:24.173 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateToTagSqlCommandStep
+2026-01-29 12:00:24.173 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.ValidateCommandStep
+2026-01-29 12:00:24.173 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ChangeExecListenerCommandStep
+2026-01-29 12:00:24.173 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DatabaseChangelogCommandStep
+2026-01-29 12:00:24.173 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep
+2026-01-29 12:00:24.174 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DbUrlConnectionCommandStep
+2026-01-29 12:00:24.174 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DiffOutputControlCommandStep
+2026-01-29 12:00:24.174 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.LockServiceCommandStep
+2026-01-29 12:00:24.174 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.OutputWriterCommandStep
+2026-01-29 12:00:24.175 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.PreCompareCommandStep
+2026-01-29 12:00:24.175 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ReferenceDatabaseOutputWriterCommandStep
+2026-01-29 12:00:24.175 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ReferenceDbUrlConnectionCommandStep
+2026-01-29 12:00:24.175 DEBUG l.s.StandardServiceLocator - Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ShowSummaryArgument
+2026-01-29 12:00:24.178 DEBUG l.s.StandardServiceLocator - Loaded liquibase.logging.mdc.MdcManager instance liquibase.logging.mdc.NoOpMdcManager
+2026-01-29 12:00:24.178 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.strict found
+2026-01-29 12:00:24.178 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.strict is using the default value of false
+2026-01-29 12:00:24.179 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.changeExecListener found
+2026-01-29 12:00:24.179 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.changeExecListener found
+2026-01-29 12:00:24.179 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.changeExecListenerClass found
+2026-01-29 12:00:24.180 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.changeExecListenerClass found
+2026-01-29 12:00:24.180 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.changeExecListenerPropertiesFile found
+2026-01-29 12:00:24.180 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.changeExecListenerPropertiesFile found
+2026-01-29 12:00:24.180 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.changelogFile' configuration of 'changelog.xml'
     command argument 'changelogFile' of 'changelog.xml'
-2026-01-29 11:30:21.581 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.changelogParameters' configuration of 'liquibase.changelog.ChangeLogParameters@5b11a194'
+2026-01-29 12:00:24.181 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.changelogParameters' configuration of 'liquibase.changelog.ChangeLogParameters@5b11a194'
     command argument 'changelogParameters' of 'liquibase.changelog.ChangeLogParameters@5b11a194'
-2026-01-29 11:30:21.581 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.contextFilter aka liquibase.command.update.contexts found
-2026-01-29 11:30:21.581 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.contextFilter aka liquibase.command.contexts found
-2026-01-29 11:30:21.581 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.database' configuration of 'ellmaster @ jdbc:postgresql://localhost:5432/ban2020 (Default Schema: ellmaster)'
+2026-01-29 12:00:24.181 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.contextFilter aka liquibase.command.update.contexts found
+2026-01-29 12:00:24.181 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.contextFilter aka liquibase.command.contexts found
+2026-01-29 12:00:24.181 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.database' configuration of 'ellmaster @ jdbc:postgresql://localhost:5432/ban2020 (Default Schema: ellmaster)'
     command argument 'database' of 'ellmaster @ jdbc:postgresql://localhost:5432/ban2020 (Default Schema: ellmaster)'
-2026-01-29 11:30:21.582 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.databaseChangelog found
-2026-01-29 11:30:21.582 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.databaseChangelog found
-2026-01-29 11:30:21.582 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.defaultCatalogName found
-2026-01-29 11:30:21.582 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.defaultCatalogName found
-2026-01-29 11:30:21.582 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.defaultSchemaName found
-2026-01-29 11:30:21.582 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.defaultSchemaName found
-2026-01-29 11:30:21.583 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.driver found
-2026-01-29 11:30:21.583 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.driver found
-2026-01-29 11:30:21.583 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.driverPropertiesFile found
-2026-01-29 11:30:21.583 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.driverPropertiesFile found
-2026-01-29 11:30:21.583 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.labelFilter aka liquibase.command.update.labels found
-2026-01-29 11:30:21.584 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.labelFilter aka liquibase.command.labels found
-2026-01-29 11:30:21.584 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.password found
-2026-01-29 11:30:21.584 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.password found
-2026-01-29 11:30:21.584 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.showSummary found
-2026-01-29 11:30:21.584 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
-2026-01-29 11:30:21.584 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.showSummary found
-2026-01-29 11:30:21.584 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.showSummary is using the default value of SUMMARY
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.showSummaryOutput' configuration of 'LOG'
+2026-01-29 12:00:24.182 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.databaseChangelog found
+2026-01-29 12:00:24.182 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.databaseChangelog found
+2026-01-29 12:00:24.182 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.defaultCatalogName found
+2026-01-29 12:00:24.182 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.defaultCatalogName found
+2026-01-29 12:00:24.182 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.defaultSchemaName found
+2026-01-29 12:00:24.182 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.defaultSchemaName found
+2026-01-29 12:00:24.183 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.driver found
+2026-01-29 12:00:24.183 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.driver found
+2026-01-29 12:00:24.183 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.driverPropertiesFile found
+2026-01-29 12:00:24.183 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.driverPropertiesFile found
+2026-01-29 12:00:24.184 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.labelFilter aka liquibase.command.update.labels found
+2026-01-29 12:00:24.184 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.labelFilter aka liquibase.command.labels found
+2026-01-29 12:00:24.184 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.password found
+2026-01-29 12:00:24.184 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.password found
+2026-01-29 12:00:24.184 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.showSummary found
+2026-01-29 12:00:24.184 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
+2026-01-29 12:00:24.184 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.showSummary found
+2026-01-29 12:00:24.184 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.showSummary is using the default value of SUMMARY
+2026-01-29 12:00:24.185 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.showSummaryOutput' configuration of 'LOG'
     command argument 'showSummaryOutput' of 'LOG'
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.skipDatabaseStep found
-2026-01-29 11:30:21.585 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.skipDatabaseStep found
-2026-01-29 11:30:21.585 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.skipDatabaseStep is using the default value of false
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.updateNullChecksums found
-2026-01-29 11:30:21.585 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.updateNullChecksums is using the default value of false
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.updateNullChecksums found
-2026-01-29 11:30:21.585 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.updateNullChecksums is using the default value of false
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.url found
-2026-01-29 11:30:21.585 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.url found
-2026-01-29 11:30:21.586 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.username found
-2026-01-29 11:30:21.586 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.username found
-2026-01-29 11:30:21.586 DEBUG liquibase.command.CommandScope - Pipeline for command 'update: liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep then liquibase.command.core.helpers.ShowSummaryArgument then liquibase.command.core.helpers.DbUrlConnectionCommandStep then liquibase.command.core.helpers.DatabaseChangelogCommandStep then liquibase.command.core.helpers.ChangeExecListenerCommandStep then liquibase.command.core.UpdateCommandStep
-2026-01-29 11:30:21.586 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.outputFile found
-2026-01-29 11:30:21.586 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.outputFileEncoding found
-2026-01-29 11:30:21.586 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.outputFileEncoding is using the default value of UTF-8
-2026-01-29 11:30:21.586 DEBUG liquibase.command.CommandScope - Writing output with encoding 'UTF-8'
-2026-01-29 11:30:21.586 DEBUG liquibase.command.CommandScope - Executing internal command dbUrlConnectionArguments
-2026-01-29 11:30:21.586 DEBUG liquibase.command.CommandScope - Executing internal command showSummary
-2026-01-29 11:30:21.587 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
-2026-01-29 11:30:21.587 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.showSummary is using the default value of SUMMARY
-2026-01-29 11:30:21.587 DEBUG liquibase.command.CommandScope - Executing internal command dbUrlConnectionCommandStep
-2026-01-29 11:30:21.587 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
-2026-01-29 11:30:21.587 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.skipDatabaseStep is using the default value of false
-2026-01-29 11:30:21.587 DEBUG liquibase.command.CommandScope - Executing internal command changelogCommandStep
-2026-01-29 11:30:21.590 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.formattedsql.FormattedSqlChangeLogParser
-2026-01-29 11:30:21.591 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.json.JsonChangeLogParser
-2026-01-29 11:30:21.592 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.sql.SqlChangeLogParser
-2026-01-29 11:30:21.593 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.validateXmlChangelogFiles found
-2026-01-29 11:30:21.593 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.validateXmlChangelogFiles is using the default value of true
-2026-01-29 11:30:21.593 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.secureParsing found
-2026-01-29 11:30:21.593 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.secureParsing is using the default value of true
-2026-01-29 11:30:21.593 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.xml.XMLChangeLogSAXParser
-2026-01-29 11:30:21.593 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.yaml.YamlChangeLogParser
-2026-01-29 11:30:21.593 DEBUG l.parser.ChangeLogParserFactory - Matched file 'changelog.xml' to parser 'XMLChangeLogSAXParser'
-2026-01-29 11:30:21.596 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.CustomPreconditionWrapper
-2026-01-29 11:30:21.596 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.AndPrecondition
-2026-01-29 11:30:21.596 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ChangeLogPropertyDefinedPrecondition
-2026-01-29 11:30:21.597 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ChangeSetExecutedPrecondition
-2026-01-29 11:30:21.597 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ColumnExistsPrecondition
-2026-01-29 11:30:21.597 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.DBMSPrecondition
-2026-01-29 11:30:21.597 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ForeignKeyExistsPrecondition
-2026-01-29 11:30:21.597 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.IndexExistsPrecondition
-2026-01-29 11:30:21.597 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.NotPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ObjectQuotingStrategyPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.OrPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.PreconditionContainer
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.PrimaryKeyExistsPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.RowCountPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.RunningAsPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.SequenceExistsPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.SqlPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.TableExistsPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.TableIsEmptyPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.UniqueConstraintExistsPrecondition
-2026-01-29 11:30:21.598 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ViewExistsPrecondition
-2026-01-29 11:30:21.609 DEBUG l.p.core.xml.LiquibaseEntityResolver - Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd'
-2026-01-29 11:30:21.628 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.fileEncoding found
-2026-01-29 11:30:21.628 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.fileEncoding is using the default value of UTF-8
-2026-01-29 11:30:21.628 DEBUG l.parser.ChangeLogParserFactory - Matched file 'changeset.sql' to parser 'FormattedSqlChangeLogParser'
-2026-01-29 11:30:21.629 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changeset.ChangeSetService instance liquibase.changeset.StandardChangeSetService
-2026-01-29 11:30:21.630 DEBUG l.parser.ChangeLogParserFactory - Matched file 'changeset2.sql' to parser 'FormattedSqlChangeLogParser'
-2026-01-29 11:30:21.631 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.updateNullChecksums' configuration of 'true'
+2026-01-29 12:00:24.185 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.skipDatabaseStep found
+2026-01-29 12:00:24.185 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
+2026-01-29 12:00:24.185 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.skipDatabaseStep found
+2026-01-29 12:00:24.185 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.skipDatabaseStep is using the default value of false
+2026-01-29 12:00:24.185 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.updateNullChecksums found
+2026-01-29 12:00:24.185 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.updateNullChecksums is using the default value of false
+2026-01-29 12:00:24.185 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.updateNullChecksums found
+2026-01-29 12:00:24.185 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.updateNullChecksums is using the default value of false
+2026-01-29 12:00:24.186 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.url found
+2026-01-29 12:00:24.186 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.url found
+2026-01-29 12:00:24.186 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.update.username found
+2026-01-29 12:00:24.186 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.command.username found
+2026-01-29 12:00:24.186 DEBUG liquibase.command.CommandScope - Pipeline for command 'update: liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep then liquibase.command.core.helpers.ShowSummaryArgument then liquibase.command.core.helpers.DbUrlConnectionCommandStep then liquibase.command.core.helpers.DatabaseChangelogCommandStep then liquibase.command.core.helpers.ChangeExecListenerCommandStep then liquibase.command.core.UpdateCommandStep
+2026-01-29 12:00:24.187 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.outputFile found
+2026-01-29 12:00:24.187 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.outputFileEncoding found
+2026-01-29 12:00:24.187 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.outputFileEncoding is using the default value of UTF-8
+2026-01-29 12:00:24.187 DEBUG liquibase.command.CommandScope - Writing output with encoding 'UTF-8'
+2026-01-29 12:00:24.187 DEBUG liquibase.command.CommandScope - Executing internal command dbUrlConnectionArguments
+2026-01-29 12:00:24.187 DEBUG liquibase.command.CommandScope - Executing internal command showSummary
+2026-01-29 12:00:24.187 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
+2026-01-29 12:00:24.187 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.showSummary is using the default value of SUMMARY
+2026-01-29 12:00:24.187 DEBUG liquibase.command.CommandScope - Executing internal command dbUrlConnectionCommandStep
+2026-01-29 12:00:24.187 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
+2026-01-29 12:00:24.188 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.command.skipDatabaseStep is using the default value of false
+2026-01-29 12:00:24.188 DEBUG liquibase.command.CommandScope - Executing internal command changelogCommandStep
+2026-01-29 12:00:24.191 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.formattedsql.FormattedSqlChangeLogParser
+2026-01-29 12:00:24.193 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.json.JsonChangeLogParser
+2026-01-29 12:00:24.193 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.sql.SqlChangeLogParser
+2026-01-29 12:00:24.196 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.validateXmlChangelogFiles found
+2026-01-29 12:00:24.196 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.validateXmlChangelogFiles is using the default value of true
+2026-01-29 12:00:24.196 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.secureParsing found
+2026-01-29 12:00:24.196 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.secureParsing is using the default value of true
+2026-01-29 12:00:24.196 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.xml.XMLChangeLogSAXParser
+2026-01-29 12:00:24.196 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.yaml.YamlChangeLogParser
+2026-01-29 12:00:24.196 DEBUG l.parser.ChangeLogParserFactory - Matched file 'changelog.xml' to parser 'XMLChangeLogSAXParser'
+2026-01-29 12:00:24.200 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.CustomPreconditionWrapper
+2026-01-29 12:00:24.200 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.AndPrecondition
+2026-01-29 12:00:24.200 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ChangeLogPropertyDefinedPrecondition
+2026-01-29 12:00:24.201 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ChangeSetExecutedPrecondition
+2026-01-29 12:00:24.201 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ColumnExistsPrecondition
+2026-01-29 12:00:24.201 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.DBMSPrecondition
+2026-01-29 12:00:24.201 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ForeignKeyExistsPrecondition
+2026-01-29 12:00:24.201 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.IndexExistsPrecondition
+2026-01-29 12:00:24.201 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.NotPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ObjectQuotingStrategyPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.OrPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.PreconditionContainer
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.PrimaryKeyExistsPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.RowCountPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.RunningAsPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.SequenceExistsPrecondition
+2026-01-29 12:00:24.202 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.SqlPrecondition
+2026-01-29 12:00:24.203 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.TableExistsPrecondition
+2026-01-29 12:00:24.203 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.TableIsEmptyPrecondition
+2026-01-29 12:00:24.203 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.UniqueConstraintExistsPrecondition
+2026-01-29 12:00:24.203 DEBUG l.s.StandardServiceLocator - Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ViewExistsPrecondition
+2026-01-29 12:00:24.216 DEBUG l.p.core.xml.LiquibaseEntityResolver - Resolving XML entity name='null', publicId='null', baseURI='null', systemId='http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd'
+2026-01-29 12:00:24.237 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.fileEncoding found
+2026-01-29 12:00:24.237 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.fileEncoding is using the default value of UTF-8
+2026-01-29 12:00:24.237 DEBUG l.parser.ChangeLogParserFactory - Matched file 'changeset.sql' to parser 'FormattedSqlChangeLogParser'
+2026-01-29 12:00:24.238 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changeset.ChangeSetService instance liquibase.changeset.StandardChangeSetService
+2026-01-29 12:00:24.240 DEBUG l.parser.ChangeLogParserFactory - Matched file 'changeset2.sql' to parser 'FormattedSqlChangeLogParser'
+2026-01-29 12:00:24.241 DEBUG l.c.LiquibaseConfiguration - Found 'liquibase.command.update.updateNullChecksums' configuration of 'true'
     command argument 'updateNullChecksums' of 'true'
-2026-01-29 11:30:21.632 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.MockChangeLogHistoryService
-2026-01-29 11:30:21.633 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.StandardChangeLogHistoryService
-2026-01-29 11:30:21.634 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.CatalogSnapshotGenerator
-2026-01-29 11:30:21.635 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGenerator
-2026-01-29 11:30:21.635 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorH2
-2026-01-29 11:30:21.635 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorInformix
-2026-01-29 11:30:21.635 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorOracle
-2026-01-29 11:30:21.635 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.DataSnapshotGenerator
-2026-01-29 11:30:21.636 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ForeignKeySnapshotGenerator
-2026-01-29 11:30:21.636 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.IndexSnapshotGenerator
-2026-01-29 11:30:21.636 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.PrimaryKeySnapshotGenerator
-2026-01-29 11:30:21.636 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGenerator
-2026-01-29 11:30:21.637 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGenerator
-2026-01-29 11:30:21.637 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.TableSnapshotGenerator
-2026-01-29 11:30:21.637 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGenerator
-2026-01-29 11:30:21.637 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ViewSnapshotGenerator
-2026-01-29 11:30:21.637 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGeneratorSnowflake
-2026-01-29 11:30:21.637 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGeneratorSnowflake
-2026-01-29 11:30:21.638 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGeneratorSnowflake
-2026-01-29 11:30:21.639 DEBUG liquibase.util.MD5Util - Computed checksum for 1769704221638 as 382e1cfcdc0c4992bd8e60cd7e0421cf
-2026-01-29 11:30:21.676 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.LiquibaseTableNames instance liquibase.database.StandardLiquibaseTableNames
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.CatalogComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ColumnComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.DefaultDatabaseObjectComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ForeignKeyComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.IndexComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.PrimaryKeyComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.SchemaComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.TableComparator
-2026-01-29 11:30:21.693 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.UniqueConstraintComparator
-2026-01-29 11:30:21.694 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.includeCatalogInSpecification found
-2026-01-29 11:30:21.694 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.includeCatalogInSpecification is using the default value of false
-2026-01-29 11:30:21.695 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.sql.alwaysSetFetchSize found
-2026-01-29 11:30:21.695 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.sql.alwaysSetFetchSize is using the default value of true
-2026-01-29 11:30:21.697 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGenerator
-2026-01-29 11:30:21.697 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorDB2
-2026-01-29 11:30:21.697 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorHsqlH2
-2026-01-29 11:30:21.697 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorInformix
-2026-01-29 11:30:21.697 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorMySQL
-2026-01-29 11:30:21.697 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorSQLite
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGenerator
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorDefaultClauseBeforeNotNull
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorSQLite
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGenerator
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorDerby
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorInformix
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMSSQL
-2026-01-29 11:30:21.698 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMySQL
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorOracle
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorPostgres
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSQLite
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybase
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybaseASA
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddForeignKeyConstraintGenerator
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGenerator
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGeneratorInformix
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGenerator
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorInformix
-2026-01-29 11:30:21.699 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorTDS
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AlterSequenceGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.BatchDmlExecutablePreparedStatementGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ClearDatabaseChangeLogTableGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CommentGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CopyRowsGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogLockTableGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGeneratorSybase
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGenerator
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorFirebird
-2026-01-29 11:30:21.700 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorPostgres
-2026-01-29 11:30:21.701 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateProcedureGenerator
-2026-01-29 11:30:21.701 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGenerator
-2026-01-29 11:30:21.701 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGenerator
-2026-01-29 11:30:21.701 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGeneratorInformix
-2026-01-29 11:30:21.701 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGenerator
-2026-01-29 11:30:21.701 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGeneratorInformix
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DeleteGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropColumnGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropForeignKeyConstraintGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropIndexGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropPrimaryKeyGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGenerator
-2026-01-29 11:30:21.702 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropSequenceGenerator
-2026-01-29 11:30:21.703 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropTableGenerator
-2026-01-29 11:30:21.703 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropUniqueConstraintGenerator
-2026-01-29 11:30:21.703 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropViewGenerator
-2026-01-29 11:30:21.703 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetNextChangeSetSequenceValueGenerator
-2026-01-29 11:30:21.703 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGenerator
-2026-01-29 11:30:21.703 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDB2
-2026-01-29 11:30:21.704 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDerby
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorFirebird
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorHsql
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorInformix
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorMSSQL
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorOracle
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorPostgres
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybase
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybaseASA
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InitializeDatabaseChangeLogLockTableGenerator
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertDataChangeGenerator
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertGenerator
-2026-01-29 11:30:21.705 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorDB2
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorH2
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorHsql
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorInformix
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMSSQL
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMySQL
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorOracle
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorPostgres
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSQLite
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSybaseASA
-2026-01-29 11:30:21.706 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertSetGenerator
-2026-01-29 11:30:25.788 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.LockDatabaseChangeLogGenerator
-2026-01-29 11:30:25.792 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.MarkChangeSetRanGenerator
-2026-01-29 11:30:25.794 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ModifyDataTypeGenerator
-2026-01-29 11:30:25.794 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawParameterizedSqlGenerator
-2026-01-29 11:30:25.795 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawSqlGenerator
-2026-01-29 11:30:25.795 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReindexGeneratorSQLite
-2026-01-29 11:30:25.796 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RemoveChangeSetRanStatusGenerator
-2026-01-29 11:30:25.796 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameColumnGenerator
-2026-01-29 11:30:25.796 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameSequenceGenerator
-2026-01-29 11:30:25.797 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGenerator
-2026-01-29 11:30:25.797 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGenerator
-2026-01-29 11:30:25.797 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReorganizeTableGeneratorDB2
-2026-01-29 11:30:25.797 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RuntimeGenerator
-2026-01-29 11:30:25.798 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogGenerator
-2026-01-29 11:30:25.798 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogLockGenerator
-2026-01-29 11:30:25.798 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGenerator
-2026-01-29 11:30:25.799 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetNullableGenerator
-2026-01-29 11:30:25.799 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGenerator
-2026-01-29 11:30:25.799 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetViewRemarksGenerator
-2026-01-29 11:30:25.800 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.StoredProcedureGenerator
-2026-01-29 11:30:25.800 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableIsEmptyGenerator
-2026-01-29 11:30:25.800 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableRowCountGenerator
-2026-01-29 11:30:25.800 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TagDatabaseGenerator
-2026-01-29 11:30:25.800 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UnlockDatabaseChangeLogGenerator
-2026-01-29 11:30:25.801 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateChangeSetChecksumGenerator
-2026-01-29 11:30:25.801 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateDataChangeGenerator
-2026-01-29 11:30:25.801 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateGenerator
-2026-01-29 11:30:25.801 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGeneratorSnowflake
-2026-01-29 11:30:25.802 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGeneratorSnowflake
-2026-01-29 11:30:25.802 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGeneratorSnowflake
-2026-01-29 11:30:25.802 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSnowflake
-2026-01-29 11:30:25.802 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGeneratorSnowflake
-2026-01-29 11:30:25.802 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGeneratorSnowflake
-2026-01-29 11:30:25.802 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGeneratorSnowflake
-2026-01-29 11:30:25.803 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGeneratorSnowflake
-2026-01-29 11:30:25.803 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSnowflake
-2026-01-29 11:30:25.820 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.826 INFO  l.c.StandardChangeLogHistoryService - Reading from upgradedemo.databasechangelog
-2026-01-29 11:30:25.830 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.835 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.LockServiceImpl
-2026-01-29 11:30:25.835 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.MockLockService
-2026-01-29 11:30:25.835 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.OfflineLockService
-2026-01-29 11:30:25.835 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.StandardLockService
-2026-01-29 11:30:25.840 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.841 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.allowDuplicatedChangesetIdentifiers found
-2026-01-29 11:30:25.841 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.allowDuplicatedChangesetIdentifiers is using the default value of false
-2026-01-29 11:30:25.842 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changelog.visitor.ValidatingVisitorGenerator instance liquibase.changelog.visitor.StandardValidatingVisitorGenerator
-2026-01-29 11:30:25.846 DEBUG liquibase.command.CommandScope - Executing internal command changeExecListener
-2026-01-29 11:30:25.847 DEBUG liquibase.command.CommandScope - Executing internal command update migrate
-2026-01-29 11:30:25.855 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.changelogLockWaitTimeInMinutes aka liquibase.changeLogLockWaitTimeInMinutes found
-2026-01-29 11:30:25.855 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.changelogLockWaitTimeInMinutes is using the default value of 5
-2026-01-29 11:30:25.858 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.860 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.861 DEBUG liquibase.executor.jvm.JdbcExecutor - Lock Database
-2026-01-29 11:30:25.865 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BigIntType
-2026-01-29 11:30:25.865 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BlobType
-2026-01-29 11:30:25.866 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BooleanType
-2026-01-29 11:30:25.866 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.CharType
-2026-01-29 11:30:25.866 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.ClobType
-2026-01-29 11:30:25.866 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.CurrencyType
-2026-01-29 11:30:25.866 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DatabaseFunctionType
-2026-01-29 11:30:25.866 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DateTimeType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DateType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DecimalType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DoubleType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.FloatType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.IntType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.MediumIntType
-2026-01-29 11:30:25.867 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NCharType
-2026-01-29 11:30:25.868 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NVarcharType
-2026-01-29 11:30:25.868 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NumberType
-2026-01-29 11:30:25.868 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.SmallIntType
-2026-01-29 11:30:25.868 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimeType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimestampType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TinyIntType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.UUIDType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.UnknownType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.VarcharType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.XMLType
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TextDataTypeSnowflake
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimestampNTZTypeSnowflake
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DoubleDataTypeSnowflake
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BinaryTypeSnowflake
-2026-01-29 11:30:25.869 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.ClobTypeSnowflake
-2026-01-29 11:30:25.878 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.882 INFO  l.lockservice.StandardLockService - Successfully acquired change log lock
-2026-01-29 11:30:25.884 INFO  l.command.core.UpdateCommandStep - Using deploymentId: 9704225884
-2026-01-29 11:30:25.886 INFO  l.c.StandardChangeLogHistoryService - Reading from upgradedemo.databasechangelog
-2026-01-29 11:30:25.887 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.888 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as 811cc87f4dab92bacc248490655c3675
-2026-01-29 11:30:25.888 DEBUG liquibase.util.MD5Util - Computed checksum for 9:811cc87f4dab92bacc248490655c3675: as ed1eaa6420d68cdcdef40d1e1e6424ca
-2026-01-29 11:30:25.889 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as 1d6c1cb525fc394ea6b30abd9fe86985
-2026-01-29 11:30:25.889 DEBUG liquibase.util.MD5Util - Computed checksum for 9:1d6c1cb525fc394ea6b30abd9fe86985: as 87a1a9a49940296ed1ce68a467959bc6
-2026-01-29 11:30:25.890 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as 811cc87f4dab92bacc248490655c3675
-2026-01-29 11:30:25.890 DEBUG liquibase.util.MD5Util - Computed checksum for 9:811cc87f4dab92bacc248490655c3675: as ed1eaa6420d68cdcdef40d1e1e6424ca
+2026-01-29 12:00:24.242 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.MockChangeLogHistoryService
+2026-01-29 12:00:24.242 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.StandardChangeLogHistoryService
+2026-01-29 12:00:24.244 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.CatalogSnapshotGenerator
+2026-01-29 12:00:24.245 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGenerator
+2026-01-29 12:00:24.245 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorH2
+2026-01-29 12:00:24.245 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorInformix
+2026-01-29 12:00:24.246 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorOracle
+2026-01-29 12:00:24.246 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.DataSnapshotGenerator
+2026-01-29 12:00:24.246 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ForeignKeySnapshotGenerator
+2026-01-29 12:00:24.247 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.IndexSnapshotGenerator
+2026-01-29 12:00:24.247 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.PrimaryKeySnapshotGenerator
+2026-01-29 12:00:24.247 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGenerator
+2026-01-29 12:00:24.247 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGenerator
+2026-01-29 12:00:24.247 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.TableSnapshotGenerator
+2026-01-29 12:00:24.248 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGenerator
+2026-01-29 12:00:24.248 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ViewSnapshotGenerator
+2026-01-29 12:00:24.248 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGeneratorSnowflake
+2026-01-29 12:00:24.248 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGeneratorSnowflake
+2026-01-29 12:00:24.248 DEBUG l.s.StandardServiceLocator - Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGeneratorSnowflake
+2026-01-29 12:00:24.250 DEBUG liquibase.util.MD5Util - Computed checksum for 1769706024249 as 93521f630bd6b60ac2d30aac80a6f863
+2026-01-29 12:00:24.293 DEBUG l.s.StandardServiceLocator - Loaded liquibase.database.LiquibaseTableNames instance liquibase.database.StandardLiquibaseTableNames
+2026-01-29 12:00:24.316 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.CatalogComparator
+2026-01-29 12:00:24.316 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ColumnComparator
+2026-01-29 12:00:24.316 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.DefaultDatabaseObjectComparator
+2026-01-29 12:00:24.316 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ForeignKeyComparator
+2026-01-29 12:00:24.317 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.IndexComparator
+2026-01-29 12:00:24.317 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.PrimaryKeyComparator
+2026-01-29 12:00:24.317 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.SchemaComparator
+2026-01-29 12:00:24.317 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.TableComparator
+2026-01-29 12:00:24.317 DEBUG l.s.StandardServiceLocator - Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.UniqueConstraintComparator
+2026-01-29 12:00:24.318 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.includeCatalogInSpecification found
+2026-01-29 12:00:24.318 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.includeCatalogInSpecification is using the default value of false
+2026-01-29 12:00:24.319 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.sql.alwaysSetFetchSize found
+2026-01-29 12:00:24.319 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.sql.alwaysSetFetchSize is using the default value of true
+2026-01-29 12:00:24.321 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGenerator
+2026-01-29 12:00:24.321 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorDB2
+2026-01-29 12:00:24.321 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorHsqlH2
+2026-01-29 12:00:24.321 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorInformix
+2026-01-29 12:00:24.321 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorMySQL
+2026-01-29 12:00:24.321 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorSQLite
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGenerator
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorDefaultClauseBeforeNotNull
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorSQLite
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGenerator
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorDerby
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorInformix
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMSSQL
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMySQL
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorOracle
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorPostgres
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSQLite
+2026-01-29 12:00:24.322 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybase
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybaseASA
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddForeignKeyConstraintGenerator
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGenerator
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGeneratorInformix
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGenerator
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorInformix
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorTDS
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AlterSequenceGenerator
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.BatchDmlExecutablePreparedStatementGenerator
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ClearDatabaseChangeLogTableGenerator
+2026-01-29 12:00:24.323 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CommentGenerator
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CopyRowsGenerator
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogLockTableGenerator
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGenerator
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGeneratorSybase
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGenerator
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorFirebird
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorPostgres
+2026-01-29 12:00:24.324 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateProcedureGenerator
+2026-01-29 12:00:24.325 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGenerator
+2026-01-29 12:00:24.325 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGenerator
+2026-01-29 12:00:24.325 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGeneratorInformix
+2026-01-29 12:00:24.325 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGenerator
+2026-01-29 12:00:24.325 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGeneratorInformix
+2026-01-29 12:00:24.325 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DeleteGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropColumnGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropForeignKeyConstraintGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropIndexGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropPrimaryKeyGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGenerator
+2026-01-29 12:00:24.326 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropSequenceGenerator
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropTableGenerator
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropUniqueConstraintGenerator
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropViewGenerator
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetNextChangeSetSequenceValueGenerator
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGenerator
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDB2
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDerby
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorFirebird
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorHsql
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorInformix
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorMSSQL
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorOracle
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorPostgres
+2026-01-29 12:00:24.327 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybase
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybaseASA
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InitializeDatabaseChangeLogLockTableGenerator
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertDataChangeGenerator
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertGenerator
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorDB2
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorH2
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorHsql
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorInformix
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMSSQL
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMySQL
+2026-01-29 12:00:24.328 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorOracle
+2026-01-29 12:00:24.329 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorPostgres
+2026-01-29 12:00:24.329 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSQLite
+2026-01-29 12:00:24.329 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSybaseASA
+2026-01-29 12:00:24.329 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertSetGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.LockDatabaseChangeLogGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.MarkChangeSetRanGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ModifyDataTypeGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawParameterizedSqlGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawSqlGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReindexGeneratorSQLite
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RemoveChangeSetRanStatusGenerator
+2026-01-29 12:00:24.333 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameColumnGenerator
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameSequenceGenerator
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGenerator
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGenerator
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReorganizeTableGeneratorDB2
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RuntimeGenerator
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogGenerator
+2026-01-29 12:00:24.334 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogLockGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetNullableGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetViewRemarksGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.StoredProcedureGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableIsEmptyGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableRowCountGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TagDatabaseGenerator
+2026-01-29 12:00:24.336 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UnlockDatabaseChangeLogGenerator
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateChangeSetChecksumGenerator
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateDataChangeGenerator
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateGenerator
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGeneratorSnowflake
+2026-01-29 12:00:24.337 DEBUG l.s.StandardServiceLocator - Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSnowflake
+2026-01-29 12:00:24.343 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.345 INFO  l.c.StandardChangeLogHistoryService - Reading from upgradedemo.databasechangelog
+2026-01-29 12:00:24.346 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.348 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.LockServiceImpl
+2026-01-29 12:00:24.348 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.MockLockService
+2026-01-29 12:00:24.348 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.OfflineLockService
+2026-01-29 12:00:24.348 DEBUG l.s.StandardServiceLocator - Loaded liquibase.lockservice.LockService instance liquibase.lockservice.StandardLockService
+2026-01-29 12:00:24.351 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.351 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.allowDuplicatedChangesetIdentifiers found
+2026-01-29 12:00:24.351 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.allowDuplicatedChangesetIdentifiers is using the default value of false
+2026-01-29 12:00:24.352 DEBUG l.s.StandardServiceLocator - Loaded liquibase.changelog.visitor.ValidatingVisitorGenerator instance liquibase.changelog.visitor.StandardValidatingVisitorGenerator
+2026-01-29 12:00:24.355 DEBUG liquibase.command.CommandScope - Executing internal command changeExecListener
+2026-01-29 12:00:24.356 DEBUG liquibase.command.CommandScope - Executing internal command update migrate
+2026-01-29 12:00:24.360 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.changelogLockWaitTimeInMinutes aka liquibase.changeLogLockWaitTimeInMinutes found
+2026-01-29 12:00:24.361 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.changelogLockWaitTimeInMinutes is using the default value of 5
+2026-01-29 12:00:24.363 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.364 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.364 DEBUG liquibase.executor.jvm.JdbcExecutor - Lock Database
+2026-01-29 12:00:24.367 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BigIntType
+2026-01-29 12:00:24.367 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BlobType
+2026-01-29 12:00:24.367 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BooleanType
+2026-01-29 12:00:24.367 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.CharType
+2026-01-29 12:00:24.367 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.ClobType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.CurrencyType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DatabaseFunctionType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DateTimeType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DateType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DecimalType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DoubleType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.FloatType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.IntType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.MediumIntType
+2026-01-29 12:00:24.368 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NCharType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NVarcharType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.NumberType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.SmallIntType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimeType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimestampType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TinyIntType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.UUIDType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.UnknownType
+2026-01-29 12:00:24.369 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.VarcharType
+2026-01-29 12:00:24.370 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.XMLType
+2026-01-29 12:00:24.370 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TextDataTypeSnowflake
+2026-01-29 12:00:24.370 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.TimestampNTZTypeSnowflake
+2026-01-29 12:00:24.370 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.DoubleDataTypeSnowflake
+2026-01-29 12:00:24.370 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.BinaryTypeSnowflake
+2026-01-29 12:00:24.370 DEBUG l.s.StandardServiceLocator - Loaded liquibase.datatype.LiquibaseDataType instance liquibase.datatype.core.ClobTypeSnowflake
+2026-01-29 12:00:24.375 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.376 INFO  l.lockservice.StandardLockService - Successfully acquired change log lock
+2026-01-29 12:00:24.376 INFO  l.command.core.UpdateCommandStep - Using deploymentId: 9706024376
+2026-01-29 12:00:24.378 INFO  l.c.StandardChangeLogHistoryService - Reading from upgradedemo.databasechangelog
+2026-01-29 12:00:24.378 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.379 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as ac967627ece2606e6f9108acc4c923ce
+2026-01-29 12:00:24.379 DEBUG liquibase.util.MD5Util - Computed checksum for 9:ac967627ece2606e6f9108acc4c923ce: as 3da6354204e16a3104705fdd56bc494c
+2026-01-29 12:00:24.379 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as 7e84411717ddd69222381857a6aacdbf
+2026-01-29 12:00:24.379 DEBUG liquibase.util.MD5Util - Computed checksum for 9:7e84411717ddd69222381857a6aacdbf: as 6fe0b80faa83fb578324ec2765dbd887
+2026-01-29 12:00:24.380 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as ac967627ece2606e6f9108acc4c923ce
+2026-01-29 12:00:24.380 DEBUG liquibase.util.MD5Util - Computed checksum for 9:ac967627ece2606e6f9108acc4c923ce: as 3da6354204e16a3104705fdd56bc494c
 Running Changeset: changeset.sql::changeset.sql::scott
-2026-01-29 11:30:25.891 DEBUG l.changelog.visitor.UpdateVisitor - Running Changeset: changeset.sql::changeset.sql::scott
-2026-01-29 11:30:25.891 DEBUG liquibase.executor.jvm.JdbcExecutor - Changeset changeset.sql::changeset.sql::scott
-2026-01-29 11:30:25.896 DEBUG liquibase.changelog.ChangeSet - Reading ChangeSet: changeset.sql::changeset.sql::scott
-2026-01-29 11:30:25.899 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.LiquibaseSqlParser instance liquibase.util.StandardSqlParser
-2026-01-29 11:30:25.903 DEBUG liquibase.executor.jvm.JdbcExecutor - Executing Statement: -- **** *********************************************************
--- insert into scott bonus new values for CIO
+2026-01-29 12:00:24.381 DEBUG l.changelog.visitor.UpdateVisitor - Running Changeset: changeset.sql::changeset.sql::scott
+2026-01-29 12:00:24.381 DEBUG liquibase.executor.jvm.JdbcExecutor - Changeset changeset.sql::changeset.sql::scott
+2026-01-29 12:00:24.382 DEBUG liquibase.changelog.ChangeSet - Reading ChangeSet: changeset.sql::changeset.sql::scott
+2026-01-29 12:00:24.383 DEBUG l.s.StandardServiceLocator - Loaded liquibase.parser.LiquibaseSqlParser instance liquibase.util.StandardSqlParser
+2026-01-29 12:00:24.385 DEBUG liquibase.executor.jvm.JdbcExecutor - Executing Statement: -- **** *********************************************************
+-- insert into scott bonus new values for CIO should not be stripped out 
 -- **** *********************************************************
   insert into scott.bonus ( ename, job, sal, comm)
   values (  'ME', 'CIO', 100000, 10000 )
-2026-01-29 11:30:25.904 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.sql.logLevel found
-2026-01-29 11:30:25.904 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.sql.logLevel is using the default value of FINE
-2026-01-29 11:30:25.904 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - -- **** *********************************************************
--- insert into scott bonus new values for CIO
+2026-01-29 12:00:24.385 DEBUG l.c.LiquibaseConfiguration - No configuration value for liquibase.sql.logLevel found
+2026-01-29 12:00:24.385 DEBUG l.c.ConfigurationDefinition - Configuration liquibase.sql.logLevel is using the default value of FINE
+2026-01-29 12:00:24.385 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - -- **** *********************************************************
+-- insert into scott bonus new values for CIO should not be stripped out 
 -- **** *********************************************************
   insert into scott.bonus ( ename, job, sal, comm)
   values (  'ME', 'CIO', 100000, 10000 )
-2026-01-29 11:30:25.909 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
-2026-01-29 11:30:25.909 INFO  liquibase.changelog.ChangeSet - Custom SQL executed
-2026-01-29 11:30:25.910 INFO  liquibase.changelog.ChangeSet - ChangeSet changeset.sql::changeset.sql::scott ran successfully in 19ms
-2026-01-29 11:30:25.914 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.915 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - INSERT INTO upgradedemo.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('changeset.sql', 'scott', 'changeset.sql', NOW(), 1, '9:ed1eaa6420d68cdcdef40d1e1e6424ca', 'sql', '', 'EXECUTED', NULL, NULL, '4.29.2', '9704225884')
-2026-01-29 11:30:25.918 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
-2026-01-29 11:30:25.919 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.920 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as 1d6c1cb525fc394ea6b30abd9fe86985
-2026-01-29 11:30:25.920 DEBUG liquibase.util.MD5Util - Computed checksum for 9:1d6c1cb525fc394ea6b30abd9fe86985: as 87a1a9a49940296ed1ce68a467959bc6
+2026-01-29 12:00:24.388 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
+2026-01-29 12:00:24.389 INFO  liquibase.changelog.ChangeSet - Custom SQL executed
+2026-01-29 12:00:24.389 INFO  liquibase.changelog.ChangeSet - ChangeSet changeset.sql::changeset.sql::scott ran successfully in 8ms
+2026-01-29 12:00:24.391 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.392 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - INSERT INTO upgradedemo.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('changeset.sql', 'scott', 'changeset.sql', NOW(), 1, '9:3da6354204e16a3104705fdd56bc494c', 'sql', '', 'EXECUTED', NULL, NULL, '4.29.2', '9706024376')
+2026-01-29 12:00:24.394 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
+2026-01-29 12:00:24.394 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.395 DEBUG liquibase.util.MD5Util - Computed checksum for inputStream as 7e84411717ddd69222381857a6aacdbf
+2026-01-29 12:00:24.395 DEBUG liquibase.util.MD5Util - Computed checksum for 9:7e84411717ddd69222381857a6aacdbf: as 6fe0b80faa83fb578324ec2765dbd887
 Running Changeset: changeset2.sql::changeset2.sql::scott
-2026-01-29 11:30:25.920 DEBUG l.changelog.visitor.UpdateVisitor - Running Changeset: changeset2.sql::changeset2.sql::scott
-2026-01-29 11:30:25.920 DEBUG liquibase.executor.jvm.JdbcExecutor - Changeset changeset2.sql::changeset2.sql::scott
-2026-01-29 11:30:25.921 DEBUG liquibase.changelog.ChangeSet - Reading ChangeSet: changeset2.sql::changeset2.sql::scott
-2026-01-29 11:30:25.921 DEBUG liquibase.executor.jvm.JdbcExecutor - Executing Statement: -- **** *********************************************************
--- insert into scott bonus new values with parameters
--- **** *********************************************************
-insert into scott.bonus ( ename, job, sal, comm)
+2026-01-29 12:00:24.395 DEBUG l.changelog.visitor.UpdateVisitor - Running Changeset: changeset2.sql::changeset2.sql::scott
+2026-01-29 12:00:24.395 DEBUG liquibase.executor.jvm.JdbcExecutor - Changeset changeset2.sql::changeset2.sql::scott
+2026-01-29 12:00:24.396 DEBUG liquibase.changelog.ChangeSet - Reading ChangeSet: changeset2.sql::changeset2.sql::scott
+2026-01-29 12:00:24.396 DEBUG liquibase.executor.jvm.JdbcExecutor - Executing Statement: insert into scott.bonus ( ename, job, sal, comm)
 values (  'YOURNAME', 'CHIEF', 100000, 10000 )
-2026-01-29 11:30:25.921 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - -- **** *********************************************************
--- insert into scott bonus new values with parameters
--- **** *********************************************************
-insert into scott.bonus ( ename, job, sal, comm)
+2026-01-29 12:00:24.396 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - insert into scott.bonus ( ename, job, sal, comm)
 values (  'YOURNAME', 'CHIEF', 100000, 10000 )
-2026-01-29 11:30:25.923 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
-2026-01-29 11:30:25.923 INFO  liquibase.changelog.ChangeSet - Custom SQL executed
-2026-01-29 11:30:25.923 INFO  liquibase.changelog.ChangeSet - ChangeSet changeset2.sql::changeset2.sql::scott ran successfully in 3ms
-2026-01-29 11:30:25.924 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - INSERT INTO upgradedemo.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('changeset2.sql', 'scott', 'changeset2.sql', NOW(), 2, '9:87a1a9a49940296ed1ce68a467959bc6', 'sql', '', 'EXECUTED', NULL, NULL, '4.29.2', '9704225884')
-2026-01-29 11:30:25.926 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
-2026-01-29 11:30:25.926 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.928 DEBUG l.s.StandardServiceLocator - Loaded liquibase.report.ShowSummaryGenerator instance liquibase.report.StandardShowSummaryGenerator
-2026-01-29 11:30:25.929 INFO  liquibase.util.ShowSummaryUtil - UPDATE SUMMARY
-2026-01-29 11:30:25.929 INFO  liquibase.util.ShowSummaryUtil - Run:                          2
-2026-01-29 11:30:25.929 INFO  liquibase.util.ShowSummaryUtil - Previously run:               0
-2026-01-29 11:30:25.929 INFO  liquibase.util.ShowSummaryUtil - Filtered out:                 0
-2026-01-29 11:30:25.929 INFO  liquibase.util.ShowSummaryUtil - -------------------------------
-2026-01-29 11:30:25.929 INFO  liquibase.util.ShowSummaryUtil - Total change sets:            2
-2026-01-29 11:30:25.930 INFO  liquibase.util.ShowSummaryUtil - Update summary generated
-2026-01-29 11:30:25.932 INFO  l.command.core.UpdateCommandStep - Update command completed successfully.
+2026-01-29 12:00:24.397 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
+2026-01-29 12:00:24.397 INFO  liquibase.changelog.ChangeSet - Custom SQL executed
+2026-01-29 12:00:24.398 INFO  liquibase.changelog.ChangeSet - ChangeSet changeset2.sql::changeset2.sql::scott ran successfully in 3ms
+2026-01-29 12:00:24.399 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - INSERT INTO upgradedemo.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('changeset2.sql', 'scott', 'changeset2.sql', NOW(), 2, '9:6fe0b80faa83fb578324ec2765dbd887', 'sql', '', 'EXECUTED', NULL, NULL, '4.29.2', '9706024376')
+2026-01-29 12:00:24.399 DEBUG l.e.j.JdbcExecutor$ExecuteStatementCallback - 1 row(s) affected
+2026-01-29 12:00:24.399 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.403 DEBUG l.s.StandardServiceLocator - Loaded liquibase.report.ShowSummaryGenerator instance liquibase.report.StandardShowSummaryGenerator
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - UPDATE SUMMARY
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - Run:                          2
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - Previously run:               0
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - Filtered out:                 0
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - -------------------------------
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - Total change sets:            2
+2026-01-29 12:00:24.404 INFO  liquibase.util.ShowSummaryUtil - Update summary generated
+2026-01-29 12:00:24.405 INFO  l.command.core.UpdateCommandStep - Update command completed successfully.
 Liquibase: Update has been successful. Rows affected: 4
-2026-01-29 11:30:25.932 DEBUG liquibase.executor.jvm.JdbcExecutor - Release Database Lock
-2026-01-29 11:30:25.935 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
-2026-01-29 11:30:25.937 INFO  l.lockservice.StandardLockService - Successfully released change log lock
-2026-01-29 11:30:25.938 INFO  liquibase.command.CommandScope - Command execution complete
-2026-01-29 11:30:25.938 DEBUG LiquibaseScopeExample - Complete the test
-2026-01-29 11:30:25.939 DEBUG DatabaseUtility - Found the changeset in the databasechangelog changeset2.sql
-2026-01-29 11:30:25.940 DEBUG DatabaseUtility - Found the job in bonus CHIEF
+2026-01-29 12:00:24.405 DEBUG liquibase.executor.jvm.JdbcExecutor - Release Database Lock
+2026-01-29 12:00:24.408 DEBUG l.e.jvm.ChangelogJdbcMdcListener - Changelog query completed.
+2026-01-29 12:00:24.408 INFO  l.lockservice.StandardLockService - Successfully released change log lock
+2026-01-29 12:00:24.409 INFO  liquibase.command.CommandScope - Command execution complete
+2026-01-29 12:00:24.409 DEBUG LiquibaseScopeExample - Complete the test
+2026-01-29 12:00:24.409 DEBUG DatabaseUtility - Found the changeset in the databasechangelog changeset2.sql
+2026-01-29 12:00:24.410 DEBUG DatabaseUtility - Found the job in bonus CHIEF
 Found results? true Job=CHIEF ChangesetId=changeset2.sql
-2026-01-29 11:30:25.941 DEBUG DatabaseUtility - Found the changeset in the databasechangelog changeset2.sql
-2026-01-29 11:30:25.941 DEBUG DatabaseUtility - Found the job in bonus CIO
+2026-01-29 12:00:24.410 DEBUG DatabaseUtility - Found the changeset in the databasechangelog changeset2.sql
+2026-01-29 12:00:24.411 DEBUG DatabaseUtility - Found the job in bonus CIO
 Found results? true Job=CIO ChangesetId=changeset2.sql
 SUCCESS
-Start time is 2026-01-29 11:30:21:230
-Total time to run is 0 days, 0 hours, 0 minutes, 4 seconds
+Start time is 2026-01-29 12:00:23:811
+Total time to run is 0 days, 0 hours, 0 minutes, 0 seconds
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
 
@@ -559,5 +553,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 5s
+BUILD SUCCESSFUL in 1s
 3 actionable tasks: 1 executed, 2 up-to-date
