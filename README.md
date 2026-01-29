@@ -1,58 +1,119 @@
-Readme for changeset 4.25.1 demo
+# Liquibase Java Example (Gradle)
 
-Tested on JDK 8
+Demo for Liquibase  using Gradle build system
 
-The demo includes the demo java program LiquibaseScopeExample.java :
+## Requirements
 
-1. LiquibaseScopeExample.java which will run liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand  
+- **JDK 17** (recommended)
+- Gradle is included via Gradle Wrapper (no separate installation needed)
 
-1. Shell scripts to run using Oracle and another for PG. 
+## Overview
 
-Demos runs on oracle and can run on PG.  
-I added the shells but I usually run using my IDE Run. 
+This demo includes the Java program `LiquibaseScopeExample.java` which runs Liquibase for a changelog using the Liquibase 4.25.1 ScopeCommand API.
 
-1.  Verify your oracle database has the scott.bonus demo table.  
+The demo runs on Oracle and PostgreSQL databases.
+## Building the Project
 
-2. You can use the testChangeset/bonus_pg.sql to create the table on your PG database.  
+Use the Gradle Wrapper to clean and build:
 
-1. Modify the shells testChangesetSetupOra.sh, or if you have PG, modify the testChangesetSetupPg.sh 
-   update the variables for your database URL, ID that runs liquibase, password and database driver. 
+```bash
+./gradlew clean build
+```
 
-    ```
-    export dbUrl="jdbc:oracle:thin:@localhost:1521/xxxxx"
-    export dbUser="someuser"
-    export dbPwd="somepassword"
-    export dbDriver="oracle.jdbc.OracleDriver"
-    export changelogSchema=schemaName
-   
-   ```    
+Or individually:
 
-   testChangesetSetupPg.sh has the additional variable pgDefaultSchema for the search path. 
+```bash
+./gradlew clean
+./gradlew build
+```
 
-   ``` 
-   export dbUrl="jdbc:postgresql://localhost:5432/xxxxxx"
-   export dbUser="someuser"
-   export dbPwd="somepassword"
-   export dbDriver="org.postgresql.Driver"
-   export changelogSchema=schemaName
-   export pgDefaultSchema="defaultSchema"
+## Setup
 
+
+1. Verify your Oracle database has the `scott.bonus` demo table and run the script `testChangeset/bonus_oracle.sql` to create it if needed.
+The script also creates the schema used for the databasechangelog table if it does not exist, and the table and index. 
+
+2. You can use `testChangeset/bonus_pg.sql` to create the table on your PostgreSQL database along with the schema for the databasechangelog table.
+
+3. Configure your database connection by passing properties to Gradle tasks
+
+   **For Oracle:**
+   ```bash
+   ./gradlew runOracle -PdbUrl="jdbc:oracle:thin:@localhost:1521/xxxxx" \
+     -PdbUser="someuser" \
+     -PdbPwd="somepassword" \
+     -PchangelogSchema="schemaName"
    ```
- 
-3. Run the shell from the root of the repo. 
 
-  sh testChangesetSetupOra.sh 
+   **For PostgreSQL:**
+   ```bash
+   ./gradlew runPostgres -PdbUrl="jdbc:postgresql://localhost:5432/xxxxxx" \
+     -PdbUser="someuser" \
+     -PdbPwd="somepassword" \
+     -PchangelogSchema="schemaName" \
+     -PpgDefaultSchema="defaultSchema"
+   ```
 
-  sh testChangesetSetupPg.sh
+   Alternatively, you can modify the default values in `build.gradle` file in the `runOracle` or `runPostgres` task definitions.
 
-4. Logs are in the src folder 
+## Running the Application
 
-   1. scopelog.log has the output from the version that uses scope
-   1. updatelog.log has the output from the version that uses update
-   1. CommandScopeLogs.log has the output from the scope  
+Run the appropriate Gradle task:
 
-5. The java demo program is rerunnable.  The script deletes the databasechangelog row and the scott.bonus rows. 
-6. The demo print results at the end.  Each queries the the databasechangelog for the row that should be created.
-It also queries for the row that should be inserted into scott.bonus.  It prints out a success or failure. 
+```bash
+./gradlew runOracle
+```
 
- 
+or
+
+```bash
+./gradlew runPostgres
+```
+
+## Logs
+
+Log files are generated in the project root directory:
+
+- `CommandScopeLogParam.log` - Output from the CommandScope execution
+
+## How It Works
+
+1. The Java demo program is **rerunnable**. The script deletes the `databasechangelog` row and the `scott.bonus` rows before running
+2. The demo prints results at the end:
+   - Queries the `databasechangelog` for the row that should be created
+   - Queries for the row that should be inserted into `scott.bonus`
+   - Prints **SUCCESS** or **FAILURE** based on the results
+
+
+
+## Project Structure
+
+```
+liquibase_java_example/
+├── build.gradle              # Gradle build configuration
+├── settings.gradle           # Gradle settings
+├── gradlew                   # Gradle wrapper script (Unix)
+├── gradlew.bat              # Gradle wrapper script (Windows)
+├── gradle/
+│   └── wrapper/             # Gradle wrapper files
+├── src/
+│   └── main/
+│       └── java/
+│           └── LiquibaseScopeExample.java
+├── testChangeset/
+│   ├── bonus_pg.sql
+│   ├── changelog.xml
+│   ├── changeset.sql
+│   ├── changeset2.sql
+│   └── liquibase.properties
+└── logback.xml              # Logging configuration
+```
+
+## Dependencies
+
+All dependencies are managed by Gradle (see `build.gradle`):
+- Liquibase Core 4.29.2 or 5.0.1.  Toggle between the two version in `build.gradle` to test compatibility and time comparison.
+- Oracle JDBC Driver (ojdbc11)
+- PostgreSQL JDBC Driver 42.7.4
+- SLF4J & Logback for logging
+- Apache Commons utilities

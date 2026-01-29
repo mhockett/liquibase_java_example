@@ -1,0 +1,145 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.liquibase.example'
+version = '1.0.0'
+
+sourceCompatibility = '8'
+targetCompatibility = '8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Liquibase
+    implementation 'commons-codec:commons-codec:1.17.1'
+    implementation 'commons-collections:commons-collections:3.2.2'
+    implementation 'org.apache.commons:commons-compress:1.28.0'
+    implementation 'commons-lang:commons-lang:2.6'
+    implementation 'commons-io:commons-io:2.18.0'
+    implementation 'org.apache.commons:commons-text:1.11.0'
+    implementation 'commons-codec:commons-codec:1.17.2'
+    implementation 'org.apache.commons:commons-math:2.2'
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    implementation 'org.apache.poi:poi:5.4.1'
+    implementation 'org.apache.poi:poi-ooxml:5.4.1'
+    implementation 'org.apache.xmlbeans:xmlbeans:5.2.1'
+    implementation 'com.zaxxer:SparseBitSet:1.3'
+
+    // implementation "ch.qos.logback:logback-classic:1.2.13"
+    implementation 'ch.qos.logback:logback-classic:1.5.21'
+    implementation "org.yaml:snakeyaml:2.3"
+    implementation "org.hamcrest:hamcrest-core:1.3"
+    implementation "org.apache.ivy:ivy:2.5.2"
+    implementation 'junit:junit:4.13.2'
+
+    implementation 'org.codehaus.groovy:groovy-all:3.0.21'
+
+    // implementation 'org.liquibase:liquibase-core:4.27.0'
+    implementation 'org.liquibase:liquibase-core:4.29.2'
+    // implementation 'org.liquibase:liquibase-core:5.0.1'
+
+    implementation files("lib/ojdbc11-21.9.0.0.jar")
+    implementation files("lib/postgresql-42.7.4.jar")
+    implementation files("lib/dbchangelog-4.25.xsd")
+    implementation files("lib/liquibase-slf4j-4.1.0.jar")
+}
+
+application {
+    mainClass = 'LiquibaseScopeExample'
+}
+
+// Task to run the Oracle example
+tasks.register('runOracle', JavaExec) {
+    group = 'application'
+    description = 'Run Liquibase example with Oracle database'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'LiquibaseScopeExample'
+
+    // Set environment variables (can be overridden)
+    environment 'dbUrl', project.findProperty('dbUrl') ?: 'jdbc:oracle:thin:@localhost:1521/ban83'
+    environment 'dbUser', project.findProperty('dbUser') ?: 'ellmaster'
+    environment 'dbPwd', project.findProperty('dbPwd') ?: 'u_pick_it'
+    environment 'dbDriver', 'oracle.jdbc.OracleDriver'
+
+    args 'testChangeset', project.findProperty('changelogSchema') ?: 'upgradedemo'
+
+    systemProperties = [
+        'liquibase.logLevel': 'FINE',
+        'logback.configurationFile': 'logback.xml'
+    ]
+
+    doFirst {
+        println "================================================"
+        println "Running Oracle Liquibase Example"
+        println "================================================"
+        // Print Liquibase version from dependency
+        def liquibaseVersion = configurations.runtimeClasspath.resolvedConfiguration
+            .resolvedArtifacts
+            .find { it.moduleVersion.id.group == 'org.liquibase' && it.moduleVersion.id.name == 'liquibase-core' }
+            ?.moduleVersion?.id?.version
+        if (liquibaseVersion) {
+            println "Liquibase Version: ${liquibaseVersion}"
+        } else {
+            println "Liquibase Version: Could not determine from classpath"
+        }
+        println "Database URL: ${environment.dbUrl}"
+        println "Database Driver: ${environment.dbDriver}"
+        println "================================================"
+    }
+}
+
+// Task to run the PostgreSQL example
+tasks.register('runPostgres', JavaExec) {
+    group = 'application'
+    description = 'Run Liquibase example with PostgreSQL database'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'LiquibaseScopeExample'
+
+    // Set environment variables (can be overridden)
+    environment 'dbUrl', project.findProperty('dbUrl') ?: 'jdbc:postgresql://localhost:5432/ban2020'
+    environment 'dbUser', project.findProperty('dbUser') ?: 'ellmaster'
+    environment 'dbPwd', project.findProperty('dbPwd') ?: 'Manager1'
+    environment 'dbDriver', 'org.postgresql.Driver'
+    environment 'pgDefaultSchema', project.findProperty('pgDefaultSchema') ?: 'ellmaster'
+
+    args 'testChangeset', project.findProperty('changelogSchema') ?: 'upgradedemo'
+
+    systemProperties = [
+        'liquibase.logLevel': 'FINE',
+        'searchPath': 'testChangeset',
+        'logback.configurationFile': 'logback.xml'
+    ]
+
+    doFirst {
+        println "================================================"
+        println "Running PostgreSQL Liquibase Example"
+        println "================================================"
+        // Print Liquibase version from dependency
+        def liquibaseVersion = configurations.runtimeClasspath.resolvedConfiguration
+            .resolvedArtifacts
+            .find { it.moduleVersion.id.group == 'org.liquibase' && it.moduleVersion.id.name == 'liquibase-core' }
+            ?.moduleVersion?.id?.version
+        if (liquibaseVersion) {
+            println "Liquibase Version: ${liquibaseVersion}"
+        } else {
+            println "Liquibase Version: Could not determine from classpath"
+        }
+        println "Database URL: ${environment.dbUrl}"
+        println "Database Driver: ${environment.dbDriver}"
+        println "Default Schema: ${environment.pgDefaultSchema}"
+        println "================================================"
+    }
+}
+
+// Ensure resources are copied
+processResources {
+    from('testChangeset') {
+        into 'testChangeset'
+    }
+    from('logback.xml')
+}
+
