@@ -35,7 +35,7 @@ The script also creates the schema used for the databasechangelog table if it do
 
 2. You can use `testChangeset/bonus_pg.sql` to create the table on your PostgreSQL database along with the schema for the databasechangelog table.
 
-3. Configure your database connection by passing properties to Gradle tasks
+3. Configure your database connection by passing properties to Gradle tasks to run the tests 
 
    **For Oracle:**
    ```bash
@@ -56,25 +56,7 @@ The script also creates the schema used for the databasechangelog table if it do
 
    Alternatively, you can modify the default values in `build.gradle` file in the `runOracle` or `runPostgres` task definitions.
 
-## Running the Application
-
-Run the appropriate Gradle task:
-
-```bash
-./gradlew runOracle
-```
-
-or
-
-```bash
-./gradlew runPostgres
-```
-
-## Logs
-
-Log files are generated in the project root directory:
-
-- `CommandScopeLogParam.log` - Output from the CommandScope execution
+ 
 
 ## How It Works
 

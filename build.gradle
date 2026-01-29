@@ -39,8 +39,8 @@ dependencies {
     implementation 'org.codehaus.groovy:groovy-all:3.0.21'
 
     // implementation 'org.liquibase:liquibase-core:4.27.0'
-    implementation 'org.liquibase:liquibase-core:4.29.2'
-    // implementation 'org.liquibase:liquibase-core:5.0.1'
+    // implementation 'org.liquibase:liquibase-core:4.29.2'
+    implementation 'org.liquibase:liquibase-core:5.0.1'
 
     implementation files("lib/ojdbc11-21.9.0.0.jar")
     implementation files("lib/postgresql-42.7.4.jar")
@@ -52,6 +52,24 @@ application {
     mainClass = 'LiquibaseScopeExample'
 }
 
+// Helper function to prompt for password
+static String promptForPassword(String prompt) {
+    def console = System.console()
+    if (console == null) {
+        // Fallback for IDE environments
+        def scanner = new Scanner(System.in)
+        print prompt
+        return scanner.nextLine()
+    }
+    return new String(console.readPassword(prompt))
+}
+
+// Define properties for password
+ext {
+    oraclePassword = project.findProperty('dbPwd') ?: promptForPassword("Enter Oracle database password: ")
+    postgresPassword = project.findProperty('dbPwd') ?: promptForPassword("Enter PostgreSQL database password: ")
+}
+
 // Task to run the Oracle example
 tasks.register('runOracle', JavaExec) {
     group = 'application'
@@ -61,8 +79,8 @@ tasks.register('runOracle', JavaExec) {
 
     // Set environment variables (can be overridden)
     environment 'dbUrl', project.findProperty('dbUrl') ?: 'jdbc:oracle:thin:@localhost:1521/ban83'
-    environment 'dbUser', project.findProperty('dbUser') ?: 'ellmaster'
-    environment 'dbPwd', project.findProperty('dbPwd') ?: 'u_pick_it'
+    environment 'dbUser', project.findProperty('dbUser')
+    environment 'dbPwd', rootProject.ext.oraclePassword
     environment 'dbDriver', 'oracle.jdbc.OracleDriver'
 
     args 'testChangeset', project.findProperty('changelogSchema') ?: 'upgradedemo'
@@ -101,10 +119,10 @@ tasks.register('runPostgres', JavaExec) {
 
     // Set environment variables (can be overridden)
     environment 'dbUrl', project.findProperty('dbUrl') ?: 'jdbc:postgresql://localhost:5432/ban2020'
-    environment 'dbUser', project.findProperty('dbUser') ?: 'ellmaster'
-    environment 'dbPwd', project.findProperty('dbPwd') ?: 'Manager1'
+    environment 'dbUser', project.findProperty('dbUser') 
+    environment 'dbPwd', rootProject.ext.postgresPassword
     environment 'dbDriver', 'org.postgresql.Driver'
-    environment 'pgDefaultSchema', project.findProperty('pgDefaultSchema') ?: 'ellmaster'
+    environment 'pgDefaultSchema', project.findProperty('pgDefaultSchema')  
 
     args 'testChangeset', project.findProperty('changelogSchema') ?: 'upgradedemo'
 
